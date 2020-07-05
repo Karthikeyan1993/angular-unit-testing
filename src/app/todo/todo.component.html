@@ -1,0 +1,28 @@
+<div class="row mt-3">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="card x">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead class="">
+              <tr>
+                <th>User Id</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let todo of todos | slice:0:5">
+                <td>{{todo.userId}}</td>
+                <td>{{todo.id}}</td>
+                <td>{{todo.title}}</td>
+                <td>{{todo.completed}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
