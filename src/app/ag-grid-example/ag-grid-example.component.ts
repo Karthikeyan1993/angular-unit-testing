@@ -27,7 +27,7 @@ export class AgGridExampleComponent implements OnInit {
   }
 
   onGridReady = (event) => {
-
+    this.agGrid.api.sizeColumnsToFit();
   }
 
   test = () => {
